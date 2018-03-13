@@ -1,0 +1,4 @@
+https://p5js.org/get-started/
+https://p5js.org/reference/
+https://www.w3schools.com/jquery/default.asp
+http://api.jquery.com
