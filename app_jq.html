@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Projekt [wpisz nazwę]</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Umieść favicon.ico w głównym katalogu -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">
+        Używasz <strong>przestarzałej</strong> przeglądarki.
+        Zalecamy <a href="https://browsehappy.com/">aktualizację przeglądarki</a>
+        w celu polepszenia obsługi najnowszych standardów i podniesienia poziomu bezpieczeństwa.</p>
+    <![endif]-->
+
+    <!-- Tutaj dodajesz swój kod -->
+    <h1>Projekt [wpisz nazwę]</h1>
+    <div>
+      <ul class="menu">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="app_jq.html">Wersja jQuery</a></li>
+        <li><a href="app_p5.html">Wersja p5js</a></li>
+      </ul>
+    </div>
+
+
+
+    <!-- skrypt umożliwiający sprawdzanie możliwośći przeglądarki -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <!--biblioteka jQuery-->
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>-->
+    <!--jeżeli nie pobrano jQuery z sieci, spróbuj załadować ją z podfolderu js -->
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <!-- ewentualny kod JS ogólny -->
+    <script src="js/main.js"></script>
+    <!--kod aplikacji w jQuery-->
+    <script src="js/app_jq.js"></script>
+
+  </body>
+</html>
