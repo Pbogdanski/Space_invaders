@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Umieść favicon.ico w głównym katalogu -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">
+        Używasz <strong>przestarzałej</strong> przeglądarki.
+        Zalecamy <a href="https://browsehappy.com/">aktualizację przeglądarki</a>
+        w celu polepszenia obsługi najnowszych standardów i podniesienia poziomu bezpieczeństwa.</p>
+    <![endif]-->
+
+    <!-- Tutaj dodajesz swój kod -->
+    <h1>Projekt [wpisz nazwę]</h1>
+    <div>
+      <ul class="menu">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="app_jq.html">Wersja jQuery</a></li>
+        <li><a href="app_p5.html">Wersja p5js</a></li>
+      </ul>
+    </div>
+
+     <p>Dostosuj treść i wygląd tej strony!<br>
+       <br>
+        Definicje stylów CSS umieść w pliku <b>css/main.css</b>,
+        ewentualny ogólny kod JS w pliku <b>js/main.js</b>.</p>
+
+    <p>Kod projektu w jQuery umieść w pliku <b>js/app_jq.js</b>, kod w p5js w pliku <b>js/app_p5.js</b>.</p>
+
+    <p id="info">
+      W katalogu <b>doc</b> znajdziesz dokumentację w języku angielskim nt. szablonu HTML 5.
+      Dokumenty kodowane są w języku Markdown. Ich wygodne przeglądanie
+      możliwe jest na stronach GitHuba albo lokalnie za pomocą podglądu
+      w wybranym edytorze.<br>
+      <br>
+      <ul>
+        <li>W Atomie podgląd Markdown włączysz za pomocą skrótu CTRL+SHIFT+M.</li>
+        <li>W SublimeText można zainstalować dodatek Markdown​Live​Preview.</li>
+        <li>W WebStormie należy doinstalować odpowiedni plugin.</li>
+      </ul>
+    </p>
+
+    <p>Dokumentacja, tutoriale, przykłady</p>
+    <ul>
+      <li><a href="http://api.jquery.com/">jQuery API</a></li>
+      <li><a href="https://www.w3schools.com/jquery/default.asp">jQuery Tutorial</a></li>
+      <li><a href="https://p5js.org/get-started/">p5js Get Started</a></li>
+      <li><a href="https://p5js.org/reference/">p5js Reference</a></li>
+    </ul>
+
+    <!-- skrypt umożliwiający sprawdzanie możliwośći przeglądarki -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <!--biblioteka jQuery-->
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>-->
+    <!--jeżeli nie pobrano jQuery z sieci, spróbuj załadować ją z podfolderu js -->
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <!-- twój kod JS -->
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
