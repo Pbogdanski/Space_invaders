@@ -18,7 +18,7 @@ $(document).ready(function() {
     var speed = 10;
 
     var go_up = false;
-    var score_updated = false;
+    var punkty_updated = false;
     var game_over = false;
 
         // naliczanie punktów
@@ -41,8 +41,8 @@ $(document).ready(function() {
           var new_height = parseInt(Math.random() * 100);
 
             // nowe rozmiary przeszkód
-          przeszkoda1.css('height', przeszkoda_initial_height + new_height);
-          przeszkoda2.css('height', przeszkoda_initial_height - new_height);
+          przeszkoda1.css('height', pole_initial_height + new_height);
+          przeszkoda2.css('height', pole_initial_height - new_height);
 
             // zwiększenie prędkości
           speed = speed +1;
@@ -59,7 +59,7 @@ $(document).ready(function() {
     }, 40);
 
       // określenie czym bd podskakiwać (key === 32 to spacja)
-    $(document).om('keydown', function (e) {
+    $(document).on('keydown', function (e) {
       var key = e.keyCode;
       if (key === 32 && go_up === false && game_over === false) {
         go_up = setInterval(up, 50);
@@ -83,7 +83,7 @@ $(document).ready(function() {
     }
 
     function zatrzymaj_gre() {
-      clearInterval(the_game);
+      clearInterval(gra);
       game_over = true;
       restart_btn.slideDown();
     }
