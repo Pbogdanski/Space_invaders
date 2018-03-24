@@ -6,7 +6,7 @@ $(document).ready(function() {
     var przeszkoda1 = $('#przeszkoda1');
     var przeszkoda2 = $('#przeszkoda2');
     var punkty = $('#punkty');
-    var speed = $('#speed');
+    var speed_span = $('#speed');
     var restart_btn =$('#restart_btn')
 
     var container_width = parseInt(container.width());
@@ -46,11 +46,13 @@ $(document).ready(function() {
 
             // zwiększenie prędkości
           speed = speed +1;
-          speed.text(speed);
+          speed_span.text(speed);
 
-          punkty_updated = false
+          punkty_updated = false;
+
           pole_current_position = pole_initial_position;
         }
+
         pole.css('right', pole_current_position + speed);
         if (go_up === false) {
           go_down();
@@ -62,7 +64,7 @@ $(document).ready(function() {
     $(document).on('keydown', function (e) {
       var key = e.keyCode;
       if (key === 32 && go_up === false && game_over === false) {
-        go_up = setInterval(up, 50);
+        go_up = setInterval(up, 10);
       }
     });
 
@@ -79,7 +81,7 @@ $(document).ready(function() {
     }
 
     function up(){
-      ptak.css('top', parseInt(ptak.css('top')) - 15 );
+      ptak.css('top', parseInt(ptak.css('top')) - 5 );
     }
 
     function zatrzymaj_gre() {
