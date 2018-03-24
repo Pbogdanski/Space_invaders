@@ -445,3 +445,26 @@ template {
 [hidden] {
   display: none;
 }
+
+#ptak {
+  position: absolute;
+  background: url("../img/ptak.png")
+  height: 36px;
+  width: 554px;
+}
+
+.pole {
+  position: absolute;
+  height: 120px;
+  width: 55px;
+  background-color: green;
+  right: -50px;
+}
+
+#pole1 {
+  top: 0;
+}
+
+#pole2 {
+  bottom: 0;
+}
