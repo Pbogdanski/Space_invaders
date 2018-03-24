@@ -20,7 +20,19 @@ $(document).ready(function(){
     var game_over = false;
 
     var gra = setInterval(function () {
-      if (colision(ptak, pole))
+      if (colision(ptak, pole1) || colision(ptak, pole2) || parseInt(ptak.css('top')) <= 0 || parseInt(bird.css('top')) > canvas_height - ptak_height {
+        zatrzymaj_gre();
+      } else {
+        var pole_current_position = parseInt(pole.css('right'));
+
+        if (pole_current_position > canvas_width - ptak_left) {
+          if (punkty_updated === false) {
+            punkty.text(parseInt(punkty.text()) + 1);
+            punkty_updated = true;
+          }
+        }
+        
+      }
     } )
 
 });
