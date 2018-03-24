@@ -448,31 +448,33 @@ template {
 
 #container {
   position: relative;
-  height: 700px;
-  width: 70%;
+  height: 500px;
+  width: 50%;
   border: 1px solid #000000;
   background-color: lightblue;
-  margin-left: 4%;
+  margin-left: 20%;
+  margin-right: 20%;
   overflow: hidden;
 }
 
 #ptak {
   position: absolute;
-  background: url("../img/ptak.png")
+  background: url(../img/ptak.png);
   height: 36px;
   width: 54px;
   background-size: contain;
   background-repeat: no-repeat;
-  top: 20%;
-  left: 15%;
+  top: 50%;
+  left: 10%;
 }
 
 .pole {
   position: absolute;
-  height: 120px;
-  width: 55px;
+  height: 150px;
+  width: 60px;
   background-color: green;
   right: -50px;
+  border: 2px solid black;
 }
 
 #przeszkoda1 {
