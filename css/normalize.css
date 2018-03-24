@@ -446,10 +446,14 @@ template {
   display: none;
 }
 
-#canvas {
-  height: 70%;
-  width: 50%;
+#container {
+  position: relative;
+  height: 700px;
+  width: 70%;
   border: 1px solid #000000;
+  background-color: lightblue;
+  margin-left: 4%;
+  overflow: hidden;
 }
 
 #ptak {
@@ -471,11 +475,11 @@ template {
   right: -50px;
 }
 
-#pole1 {
+#przeszkoda1 {
   top: 0;
 }
 
-#pole2 {
+#przeszkoda2 {
   bottom: 0;
 }
 
