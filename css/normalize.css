@@ -446,11 +446,21 @@ template {
   display: none;
 }
 
+#canvas {
+  height: 70%;
+  width: 50%;
+  border: 1px solid #000000;
+}
+
 #ptak {
   position: absolute;
   background: url("../img/ptak.png")
   height: 36px;
-  width: 554px;
+  width: 54px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 20%;
+  left: 15%;
 }
 
 .pole {
@@ -467,4 +477,22 @@ template {
 
 #pole2 {
   bottom: 0;
+}
+
+#pole_na_pkt {
+    text-align: center;
+    font-size: 40px;
+}
+
+#restart_btn {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: grey;
+    color: white;
+    font-size: 35px;
+    border: none;
+    cursor: pointer;
+    display: none;
 }
