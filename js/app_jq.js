@@ -13,10 +13,12 @@ $(document).ready(function() {
     var container_height = parseInt(container.height());
     var pole_initial_position = parseInt(pole.css('right'));
     var pole_initial_height = parseInt(pole.css('height'));
-    var bird_left = parseInt(ptak.css('left'));
-    var bird_height = parseInt(ptak.css('height');
+    var ptak_left = parseInt(ptak.css('left'));
+    var ptak_height = parseInt(ptak.height());
     var speed = 10;
+
     var go_up = false;
+    var score_updated = false;
     var game_over = false;
 
         // naliczanie punktów
@@ -44,7 +46,7 @@ $(document).ready(function() {
 
             // zwiększenie prędkości
           speed = speed +1;
-          speed_span.text(speed);
+          speed.text(speed);
 
           punkty_updated = false
           pole_current_position = pole_initial_position;
@@ -54,7 +56,7 @@ $(document).ready(function() {
           go_down();
         }
       }
-    }, 30);
+    }, 40);
 
       // określenie czym bd podskakiwać (key === 32 to spacja)
     $(document).om('keydown', function (e) {
