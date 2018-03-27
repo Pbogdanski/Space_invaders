@@ -24,6 +24,9 @@ html {
 
 body {
   margin: 0;
+  background-image: url('../img/tlo.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 /**
